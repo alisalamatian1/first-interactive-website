@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeman</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="pok.css">
+
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Look at this Pokemans you can create in one go!</h1>
+
+
+
+    <!--
+    <label for="numberOfPokemans">Enter the number of pokemons you wanna see from 1 to 151</label>
+    Input Number: <input id="numberOfPokemons" type="text" placeholder=""
+        onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+    -->
+    <p>Enter the number of pokemons you wanna see from 1 to 151 after clicking on the button below</p>
+    <button id="clickMe">Click me!</button>
+    <section id=#container></section>
+
+    <div>
+
+    </div>
+
+    <p>You can change the color of the index of each pokemon by clicking on it; you could also change the colors of all
+        buttons on the page after creating your pokemons</p>
+
+    <H1>Other EVENTS meant for practice</H1>
+    <BUTTON onclick="alert('you clicked me')">Click Me</BUTTON>
+
+    <button id="b2">click me too</button>
+    <button id="b3">Third version</button>
+    <button id="b4">Change the background-color of the page</button>
+
+    <h2>Form Events</h2>
+    <form action="chicken/" id="tweetForm">
+        <label for="username"></label>
+        <input type="text" name="username" id="username" placeholder="username">
+        <label for="tweet"></label>
+        <input type="text" name="tweet" id="tweet" placeholder="tweet"><br>
+        <button>Submit</button>
+    </form>
+
+    <h2>Tweets:</h2>
+
+    <ul id="AddingNewtweets">
+
+    </ul>
+
+    <h1>Grocery List</h1>
+    <form action="/nowhere" id="shoppingList">
+        <label for="item">Enter A Product</label>
+        <input type="text" id="product" name="product">
+        <label for="item">Enter A Quantity</label>
+        <input type="number" id="qty" name="qty">
+        <button>Submit</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <p>Note that you can always remove an item on the list by clicking on it</p>
+
+    <h2>Type Below:</h2>
+    <form action="nowhere/" id="typing">
+        <input type="text" name="typeBox" id="typeBox">
+    </form>
+    <h3 id="liveTextChange">Live Text Change, Just type above and see!!</h3>
+
+    <h2>Ping Pong game</h2>
+    <p>The following is a boring ping pong game</p>
+
+    <section>
+        <h3 id="pointDisplay"> 0 to 0 </h3>
+    </section>
+
+
+
+    <form action="nowhere/">
+        <label for="totalPoints">Up to what point?</label>
+        <input type="number" name="totalPoints" id="totalPoints" placeholder="Enter the up-to-points"><br>
+        <button id=playerOne>1+player one</button>
+        <button id=playerTwo>1+player two</button>
+        <button id="resetGame">Reset</button>
+    </form>
+
+    <h3>Now Let's make the same thing but with more decoration</h3>
+    <section class="section">
+        <div class="container">
+            <div class="column">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1584813539806-2538b8d918c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                    alt="ping pong image">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Keeper
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-2" id="pointDisplay"> <span id="playerOneScoreDisplay">0</span> to
+                                    <span id="playerTwoScoreDisplay">0</span>
+
+                                    <p class="subtitle">
+                                        use the buttons below to keep score
+                                    </p>
+
+                                    <label for="totalP" class="label is-large is-inline">Playing to: </label>
+                                    <div class="select is-rounded is-medium">
+                                        <select name="totalP" id="totalP">
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+
+                            <button id="pOne" class="button is-primary card-footer-item">1+ playerOne</button>
+                            <button id="pTwo" class="button is-info card-footer-item">1+ playerTwo</button>
+                            <button id="reset" class="button is-danger card-footer-item">resetGame</button>
+
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="colorfull" class="container">
+        <p>
+            Now I want to change the color of this section to better understand the fact that JS is single threaded and
+            call backs of web APIs.
+        </p>
+    </div>
+
+    <div id="colorfuller" class="colorfull container">
+        <p>
+            Same thing fancier in code!
+        </p>
+    </div>
+
+    <div id="colorfullPromise" class="colorfull container">
+        <p>
+            Same thing using promises to code!
+        </p>
+    </div>
+
+    <div>
+        <p>Check the live bitcoin price by clicking the empty button below!</p>
+        <label for="bitCoinPrice">bitcoin Price</label>
+        <input type="text" name="bitCointPrice" id="bitCoinPrice">
+    </div>
+
+    <div>
+        <p>Check the live ethereum price by clicking the empty button below!</p>
+        <label for="ethereumPrice">ethereum Price</label>
+        <input type="text" name="ethereumPrice" id="ethereumPrice">
+    </div>
+
+    <div>
+        <h3 class="title is-4 mt-3 mb-1 content">
+            Let's get some dad jokes!!
+        </h3>
+        <button class="button" id="jokeButton">
+            add Jokes!
+        </button>
+        <ul id='jokes'></ul>
+    </div>
+
+    <div>
+        <form class="container" id="movies">
+            <label for="movies">search the movies you want</label>
+            <input type="text" name="movies">
+            <button id="movieButton">search!</button>
+            <div class="container" id="movieDisplay"></div>
+        </form>
+    </div>
+    <script src="pokem.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.spanClass{
+    text-align: center;
+    border: red solid 1px;
+}
+
+body{
+    margin: 1em 1em;
+}
+
+/*
+#playerOneScoreDisplay{
+    color: rgb(139, 19, 119);
+}
+
+#playerTwoScoreDisplay{
+    color: rgb(51, 19, 139);
+}
+*/
+
+#colorfull {
+    transition: 1s background-color ease-out;
+    margin: 0 0 2em 0;
+}
+
+#colorfuller {
+    transition: 1s background-color ease-out;
+    margin: 0 0 2em 0;
+}
+
+#colorfullPromise {
+    transition: 1s background-color ease-out;
+    margin: 0 0 2em 0;
+}
+
+.jokeList{
+    padding-left: 2em;
+}
